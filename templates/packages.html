@@ -1,0 +1,919 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Packages</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo">
+                                <a href="/">
+                                    <img src="{% static 'images/logotransprent.png' %}" alt="TravelBeyond Logo" class="header_logo">
+                                </a>
+                            </div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li><a href="/">Home</a></li>
+									<li><a href="about">About Us</a></li>
+									<li><a href="gallery">Gallery</a></li>
+                                    <li class="active"><a href="packages">Packages</a></li>
+                                    <li><a href="contact">Contact</a></li>
+									
+									
+                                    
+
+							
+								</ul>
+							</nav>
+
+								<div class="header_phone ml-auto">
+									<a style="color: white; font-size:xx-large;" href="https://www.instagram.com/travelbeyondkerala/" target="_blank">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+
+									
+								</div>
+
+
+							<!-- Hamburger -->
+
+                            <div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+
+		</div>
+	</header>
+
+
+	<!-- Menu -->
+    <div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+            <div class="logo">
+                <a href="">
+                    <img src="{% static 'images/logotransprent.png' %}" alt="TravelBeyond Logo" class="header_logo">
+                </a>
+            </div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+                <li class="active"><a href="/">Home</a></li>
+				<li><a href="about">About Us</a></li>
+				<li><a href="gallery">gallery</a></li>
+                <li><a href="packages">Packages</a></li>
+				<li><a href="contact">Contact</a></li>
+
+	
+		</div>
+		<div class="menu_social">
+				<div class="menu_phone ml-auto">Call us:+91 8891269669</div>
+
+		</div>
+        
+	</div>
+
+	<!-- Home -->
+
+	<div class="home" style="width: 100%; height: 120px;">
+		<div class="background_image" style="background-image:url({% static 'images/destinations.jpg' %}); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+	</div>
+	
+
+
+
+<!--logoss-->
+
+
+<!--logoss end-->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBeyond</title>
+    <style>
+       
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+:root {
+    --primary: #0e7490;
+    --secondary: #0891b2;
+    --accent: #06b6d4;
+    --light: #f0fdfa;
+    --dark: #134e4a;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+}
+/* 
+header {
+    background: linear-gradient(135deg, var(--primary), var(--dark));
+    color: white;
+    padding: 25px 0;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.1) 0%, transparent 70%);
+    z-index: 0;
+} */
+
+/* .container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: var(--transition);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+} */
+
+.hero {
+    text-align: center;
+    padding: 60px 0 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #64748b;
+}
+
+/* .search-bar {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 16px 20px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.search-bar button:hover {
+    background-color: var(--primary);
+} */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: white;
+    color: var(--dark);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    font-weight: 500;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 35px;
+    margin-bottom: 70px;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.package-image, .home {
+    position: relative;
+    overflow: hidden;
+}
+
+.background_image {
+    transition: transform 0.8s ease;
+}
+
+.package-card:hover .background_image {
+    transform: scale(1.1);
+}
+
+.package-details {
+    padding: 25px;
+}
+
+.package-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.package-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.package-meta {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 3px;
+}
+
+.meta-value {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 1.1rem;
+}
+
+.package-card p {
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.package-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.view-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(14, 116, 144, 0.2);
+}
+
+.view-btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(14, 116, 144, 0.3);
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 70px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+    z-index: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-column h3 {
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--light);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-column a:hover {
+    color: var(--accent);
+    transform: translateX(5px);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
+    color: #94a3b8;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .packages {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .packages {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 25px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .package-meta {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .package-details {
+        padding: 20px;
+    }
+    .package-title {
+        font-size: 1.2rem;
+    }
+}
+    </style>
+    
+</head>
+<body>
+   
+
+    <main class="container">
+        <section class="hero">
+            <h1>Discover Amazing Tour Packages</h1>
+           
+            
+
+    
+        </section>
+        
+        <section class="packages">
+            <!-- Package 1 -->
+            <div class="package-card">
+                <div class="home" style="width: 200%; height: 250px;">
+                    <div class="background_image" style="background-image:url({% static 'images/balicover.jpg' %}); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+                </div>
+                <div class="package-details">
+                    <h3 class="package-title">Bali – Where culture meets coastal bliss</h3>
+                    <div class="package-location">
+                        <span>📍</span>
+                        <span>Bali, Indonesia</span>
+                    </div>
+                    <div class="package-meta">
+                        <div class="meta-item">
+                            <span class="meta-value">6 Days</span>
+                            <span class="meta-label">Duration</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-value">2-10</span>
+                            <span class="meta-label">Group Size</span>
+                        </div>
+                    </div>
+                    <p>Bali – A breathtaking island where lush jungles, serene beaches, and rich cultural heritage come
+                        together to create the ultimate tropical escape!</p>
+                    <div class="package-price">
+                        <a href="package1" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+                        <!-- Package: Historic Delhi 2 -->
+            <div class="package-card">
+                <!-- Package Image -->
+                <div class="package-image" style="width: 100%; height: 250px;">
+                    <div class="background_image" style="background-image: url('{% static 'images/delhicover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+                </div>
+
+                <!-- Package Details -->
+                <div class="package-details">
+                    <h3 class="package-title">Historic Delhi</h3>
+                    <div class="package-location">
+                        <span>📍</span>
+                        <span>Delhi, India</span>
+                    </div>
+                    <div class="package-meta">
+                        <div class="meta-item">
+                            <span class="meta-value">4 Days</span>
+                            <span class="meta-label">Duration</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-value">2-10</span>
+                            <span class="meta-label">Group Size</span>
+                        </div>
+                    </div>
+                    <p>Delhi, the pulsating heart of India, brims with historic treasures—from bustling bazaars and regal forts to the nearby ethereal beauty of the Taj Mahal, a timeless emblem of eternal love.</p>
+                    <div class="package-price">
+                        <a href="delhi" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- Package: Unveil the Magic of Kerala 3 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/keralacover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Unveil the Magic of Kerala</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Kerala, India</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">5 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Discover secret waterfalls, serene rivers, and village life like never before! Ride a local tuk-tuk, cruise on a country boat, and explore Kerala’s untouched beauty.</p>
+                <div class="package-price">
+                    <a href="kerala" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+                    <!-- Package: Unforgettable Malaysia 4 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/malaysiacover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Unforgettable Malaysia</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Kuala Lumpur, Malaysia</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">6 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Explore the best of Malaysia with our all-inclusive package! From bustling cities to scenic islands, discover iconic landmarks, vibrant culture, and breathtaking landscapes—all at the best price!</p>
+                <div class="package-price">
+                    <a href="malaysia" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+                    
+                <!-- Package: Punjab: A Vibrant Journey Through History and Culture 5 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/punjabcover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Punjab: A Vibrant Journey Through History and Culture</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Punjab, India</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">4 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Explore the vibrant tapestry of Punjab's history and culture. Visit the spiritual heart of Amritsar, witness the stirring Wagah border ceremony, and immerse yourself in the warmth of authentic village life.</p>
+                <div class="package-price">
+                    <a href="punjab" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+
+                <!-- Package: Feel the Grandeur of Rajasthan 6 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/rajasthancover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Feel the Grandeur of Rajasthan</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Rajasthan, India</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">5 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Rajasthan, the regal heart of India, dazzles with its majestic forts, opulent palaces, and the timeless allure of its vibrant desert landscapes and rich cultural tapestry.</p>
+                <div class="package-price">
+                    <a href="rajasthan" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+                    
+                <!-- Package: Blissful Singapore 7 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/singaporecover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Blissful Singapore</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Singapore</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">4 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Singapore is a dynamic city-state where futuristic architecture meets lush green spaces and a rich tapestry of cultures, offering an unforgettable urban experience.</p>
+                <div class="package-price">
+                    <a href="singapore" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+                    
+                <!-- Package: Discover Thailand 8 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/thailandcover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Discover Thailand</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Thailand</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">5 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Experience the best of Thailand – from stunning beaches and vibrant nightlife to rich culture and delicious street food, this tropical paradise has something for everyone!</p>
+                <div class="package-price">
+                    <a href="thailand" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+                    
+
+
+                    
+                <!-- Package: Varanasi: Timeless Journey of Spirit 9 -->
+        <div class="package-card">
+            <!-- Package Image -->
+            <div class="package-image" style="width: 100%; height: 250px;">
+                <div class="background_image" style="background-image: url('{% static 'images/varanasicover.jpg' %}'); width: 100%; height: 100%; background-size: cover; background-position: center;"></div>
+            </div>
+
+            <!-- Package Details -->
+            <div class="package-details">
+                <h3 class="package-title">Varanasi: Timeless Journey of Spirit</h3>
+                <div class="package-location">
+                    <span>📍</span>
+                    <span>Varanasi, India</span>
+                </div>
+                <div class="package-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">3 Days</span>
+                        <span class="meta-label">Duration</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">2-10</span>
+                        <span class="meta-label">Group Size</span>
+                    </div>
+                </div>
+                <p>Varanasi, the ancient spiritual capital of India, enchants visitors with its timeless ghats, sacred rituals, and a mesmerizing aura of mysticism and tradition.</p>
+                <div class="package-price">
+                    <a href="varanasi" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        </section>
+    </main>
+
+
+
+	<!-- Footer -->
+	
+    <!-- Footer -->
+    {% include 'footer.html' %}
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TweenMax.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/TimelineMax.min.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/about.js' %}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+</body>
+
+</html>

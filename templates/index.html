@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	{% load static %}
+
+<head>
+<title>TravelBeyond</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'styles/testimonials.css' %}">
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="preload" as="image" href="{% static 'images/logotransparent.png' %}">
+
+<style>
+
+    .home {
+        height: 100vh;
+    }
+    /* General Styles */
+    .home_slider_content {
+        text-align: center;
+        padding-top: 2rem;
+    }
+    
+    .hero_title {
+        font-size: 2rem; /* Default size */
+        font-weight: bold;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .here_description {
+        font-size: 1.2rem;
+        color: rgb(249, 249, 249);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        .hero_title {
+            font-size: 1.8rem;
+        }
+        .here_description {
+            font-size: 1.1rem;
+        }
+        .home_slider_content {
+            padding-top: 4rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .hero_title {
+            font-size: 1.5rem;
+        }
+        .here_description {
+            font-size: 1rem;
+        }
+        .home_slider_content {
+            padding-top: 14rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .hero_title {
+            font-size: 1.2rem;
+        }
+        .here_description {
+            font-size: 0.9rem;
+        }
+    }
+    </style>    
+    
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo">
+                                <a href="">
+                                    <img src="{% static 'images/logotransprent.png' %}" alt="TravelBeyond Logo" class="header_logo">
+                                </a>
+                            </div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="">Home</a></li>
+									<li><a href="accounts/about">About Us</a></li>
+									<li><a href="accounts/gallery">Gallery</a></li>
+                                    <li><a href="accounts/packages">Packages</a></li>
+									<li><a href="accounts/contact">Contact</a></li>
+                                    
+
+								
+								</ul>
+							</nav>
+	
+								<div class="header_phone ml-auto">
+									<a style="color: white; font-size:xx-large;" href="https://www.instagram.com/travelbeyondkerala/" target="_blank">
+										<i class="fa-brands fa-instagram"></i>
+									</a>
+									
+								</div>
+			
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+            <div class="logo">
+                <a href="">
+                    <img src="{% static 'images/logotransprent.png' %}" alt="TravelBeyond Logo" class="header_logo">
+                </a>
+            </div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="accounts/about">About Us</a></li>
+				<li><a href="accounts/gallery">gallery</a></li>
+                <li><a href="accounts/packages">Packages</a></li>
+				<li><a href="accounts/contact">Contact</a></li>
+
+	
+		</div>
+		<div class="menu_social">
+				<div class="menu_phone ml-auto">Call us:+91 8891269669</div>
+		</div>
+        
+	</div>
+
+
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url({% static 'images/homeslider.jpg' %})"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+                                        <div class="home_title">
+                                            <h2 class="hero_title">Welcome to Travel Beyond</h2>
+                                        </div>
+                                        <h3 class="here_description">Where we believe that travel is not just a luxury but a transformative experience accessible to all.</h3>
+                                    </div>
+                                    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Search -->
+
+	<!--
+
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form action="#" class="home_search_form" id="home_search_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<input type="text" class="search_input search_input_1" placeholder="City" required="required">
+									<input type="text" class="search_input search_input_2" placeholder="Departure" required="required">
+									<input type="text" class="search_input search_input_3" placeholder="Arrival" required="required">
+									<input type="text" class="search_input search_input_4" placeholder="Budget" required="required">
+									<button class="home_search_button">search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	-->
+
+	<!-- Intro -->
+
+	<div class="intro">
+	<!--	<div class="intro_background" style="background-image:url({% static 'images/intro.png' %})"></div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="intro_container">
+						<div class="row">
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">Top Destinations</div>
+										<div class="intro_subtitle"><p>Kerala,Malaysia,Bali,Thailand,Singapore 
+                                            </p></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">The Best Prices</div>
+										<div class="intro_subtitle"><p>Travel is not just a luxury..</p></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">Amazing Services</div>
+										<div class="intro_subtitle"><p>Honeymoon Trips,Group Tours..</p></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+
+<div class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>A few words about us</h2></div>
+				</div>
+			</div>
+			<div class="row about_row">
+				<div class="col-lg-6">
+					<div class="about_content">
+						<div class="text_highlight">Welcome to Travel Beyond, where we believe that travel is not just a luxury but a transformative experience accessible to all. Our mission is to empower individuals to explore the world beyond their perceived limits, regardless of budget, life commitments, or personal circumstances.</div>
+						<div class="about_text">
+							<p>At Travel Beyond, we envision a world where every person, irrespective of their financial means or life stage, can embark on enriching journeys that broaden horizons and create lasting memories.To make travel inclusive and attainable by offering tailored, budget-friendly packages that cater to diverse groups, including families, elderly parents, single mothers with children, young explorers with limited income, and more.</p>
+						</div>
+						<div class="button about_button"><a href="accounts/packages">Packages</a></div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about_image"><img src="{% static 'images/about_1.jpg' %}" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- Destinations -->
+
+	<div class="destinations" id="destinations">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Popular Destinations</h2></div>
+				</div>
+			</div>
+			<div class="row destinations_row">
+				<div class="col">
+					<div class="destinations_container item_grid">
+
+						<!-- Destination -->
+						
+						{% for dest in dests %}
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{{ dest.img.url }}" alt="" style="width: 300px; height: 200px; object-fit: cover;">
+
+								{% if dest.offer %}
+								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+								{% endif %}
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="accounts/destinations">{{dest.name}}</a></div>
+								<div class="destination_subtitle"><p>{{dest.desc}}</p></div>
+						<!--		<div class="destination_price">From ${{dest.price}}</div> -->
+							</div>
+						</div>
+
+						{% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--services start-->
+
+
+
+
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f4f6f9;
+            --text-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 50px 15px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-header h1 {
+            font-size: 2.7rem;
+            color: var(--primary-color);
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -10px;
+            left: 0;
+            background-color: var(--accent-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+            transition: all 0.4s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+        }
+
+        .service-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: var(--accent-color);
+            stroke-width: 1.5;
+            fill: none;
+        }
+
+        .service-card:hover .service-icon {
+            background-color: rgba(52, 152, 219, 0.2);
+        }
+
+        .service-card h2 {
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #6c757d;
+            flex-grow: 1;
+            font-weight: 300;
+        }
+
+        .service-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="services-container">
+        <div class="section-header">
+            <h1>Our Specialized Travel Services</h1>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                
+                <h2>Family Tour Packages</h2>
+                <p>Curated experiences that cater to all family members, ensuring quality time and shared adventures.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h2>Experiential Tours</h2>
+                <p>Immersive journeys that allow travelers to connect deeply with destinations, cultures, and communities.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 16h-2v-2h2v2zm0-4h-2V7h2v8z"/>
+                    </svg>
+                </div>
+                
+                <h2>Elderly Parents Trips</h2>
+                <p>Thoughtfully designed itineraries that prioritize comfort, accessibility, and leisurely exploration for senior travelers.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <h2>Honeymoon Trips</h2>
+                <p>Romantic getaways crafted to celebrate love in some of the world's most enchanting locales.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+                
+                <h2>Mom and Child Tour Packages</h2>
+                <p>Specially tailored trips that provide mothers and their children with safe, enjoyable, and memorable experiences.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                </div>
+                <h2>Girl Gang & Bachelors Trips</h2>
+                <p>Fun-filled adventures designed for groups of friends seeking excitement and bonding.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                </div>
+                <h2>Group Tours</h2>
+                <p>Organized tours that bring together like-minded travelers, fostering community and shared experiences.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <path d="M16 3l2 3 2-3M6 3l2 3 2-3"/>
+                        <path d="M2 13h20"/>
+                    </svg>
+                </div>
+               
+                <h2>Business Trips</h2>
+                <p>Efficient and seamless travel solutions for corporate clients, ensuring productivity and comfort.</p>
+            </div>
+        </div>
+    </div>
+
+<!--services end-->
+
+
+
+<!-- Testimonials start -->
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials</title>
+    <style>
+        /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .testimonial-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #3498db;
+        }
+
+        /* Testimonial Grid */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial-content {
+            position: relative;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 4rem;
+            color: #3498db;
+            opacity: 0.2;
+        }
+
+        .testimonial-text {
+            margin-bottom: 1rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .author-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            margin-bottom: 0.3rem;
+            color: #2c3e50;
+        }
+
+        .author-info p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Star Rating */
+        .rating {
+            display: flex;
+            color: #f1c40f;
+            font-size: 1.2rem;
+        }
+
+        .star {
+            color: #ddd;
+        }
+
+        .star.filled {
+            color: #f1c40f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonial-container">
+        <h1>What Our Clients Say</h1>
+        
+        <div class="testimonial-grid">
+            <!-- Testimonial Card 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="quote-icon">"</p>
+                    <p class="testimonial-text">Kerala has always been special and this Trip with family was even better. I once again thank you for organizing as per my wishlist. And each and every staff involved right from Albin to the Aranya Nivas and the houseboat. Thank you so much for everything</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="{% static 'images/test2.jpg' %}" alt="Client Photo" class="author-image" style="width: 150px; height: 150px;">
+
+                    <div class="author-info">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="quote-icon">"</p>
+                    <p class="testimonial-text">Thanks to Anju. She wonderfully organized the trip, well executed & always there on call for any support during the trip. The best part, unique stays at every place in Kerala we went were amazing</p>
+                </div>
+                <div class="testimonial-author">
+					<img src="{% static 'images/test3.jpg' %}" alt="Client Photo" class="author-image" style="width: 150px; height: 150px;">
+
+                    <div class="author-info">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+					<br>
+                    <div class="rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star ">★</span>
+                    </div>
+                </div>
+            </div>
+
+           
+		<!-- Testimonial Card 2 -->
+		<div class="testimonial-card">
+			<div class="testimonial-content">
+				<p class="quote-icon">"</p>
+				<p class="testimonial-text">I recently had the pleasure of booking a trip with Travel Beyond, and I couldn't be more delighted with the experience! From start to finish, their planning was meticulous and catered perfectly to my needs. They managed to keep the costs within my budget without compromising on quality, which made my trip both enjoyable and budget-friendly.</p>
+			</div>
+			<div class="testimonial-author">
+				<img src="{% static 'images/test5.jpg' %}" alt="Client Photo" class="author-image" style="width: 150px; height: 150px;">
+
+				<div class="author-info">
+					<h4></h4>
+					<p></p>
+				</div>
+				<div class="rating">
+					<span class="star filled">★</span>
+					<span class="star filled">★</span>
+					<span class="star filled">★</span>
+					<span class="star filled">★</span>
+					<span class="star">★</span>
+				</div>
+			</div>
+		</div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!--testimonial end-->
+
+	
+
+
+
+
+
+
+	<!-- News -->
+
+
+	<!-- Footer -->
+
+
+
+	<!-- Footer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBeyond Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+        }
+
+        .footer {
+            background: linear-gradient(to right, #000000, #117393);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+        }
+
+        .footer-section h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 10px 10px;
+            font-size: 20px;
+            color: #fff;
+            transition: 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffeb3b;
+            transform: scale(1.2);
+        }
+
+        .quick-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quick-links ul li {
+            margin: 8px 0;
+        }
+
+        .quick-links ul li a {
+            text-decoration: none;
+            color: #e0e0e0;
+            transition: 0.3s ease;
+        }
+
+        .quick-links ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .contact p {
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        /* Scroll To Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffeb3b;
+            color: #007bff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .scroll-top:hover {
+            background: #ffd600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo">
+                    <img src="{% static 'images/travellogo.jpg' %}" alt="TravelBeyond Logo">
+                </div>
+                <p>Redefining Travel, Breaking Barriers—Bringing the World Closer to Every Explorer!</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/travelbeyondkerala/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="accounts/about">About</a></li>
+                    <li><a href="accounts/gallery">Gallery</a></li>
+                    <li><a href="accounts/packages">Packages</a></li>
+                    <li><a href="accounts/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: travelbeyondkerala@gmail.com</p>
+                <p>Phone: +91 8891269669</p>
+                <p>Location: Kerala | India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 TravelBeyond. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll To Top Button -->
+    <div class="scroll-top" onclick="scrollToTop()">
+        &#8679;
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Show Scroll-To-Top Button
+        window.onscroll = function () {
+            let scrollButton = document.querySelector(".scroll-top");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        };
+
+        // Smooth Scroll to Top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

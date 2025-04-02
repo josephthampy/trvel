@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import dj_database_url
 import psycopg2
 from pathlib import Path
 
@@ -78,13 +79,9 @@ WSGI_APPLICATION = 'telusko.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'changeme',
-        'HOST': 'localhost'
-    }
+    "default": dj_database_url.config(
+        default=os.getenv("postgresql://postgres_ofih_user:gR4Hh67rcAo9guDz1RaR3kVoDCbj6AYi@dpg-cvmh658dl3ps73diipdg-a.singapore-postgres.render.com/postgres_ofih")
+    )
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

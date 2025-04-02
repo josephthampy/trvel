@@ -1,1 +1,1 @@
-web: gunicorn trvel.wsgi:application --log-file -
+web: gunicorn telusko.wsgi:application --log-file -

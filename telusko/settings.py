@@ -27,7 +27,7 @@ SECRET_KEY = 'aliwy-w)qwg1##ln(ig)j$s6oz#vp4zq4hm11ao$j9b!h6k*8x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["trvel.onrender.com", "telusko.onrender.com", "127.0.0.1', 'localhost"]
+ALLOWED_HOSTS = ["trvel.onrender.com", "web-production-3a8b.up.railway.app", "telusko.onrender.com", "127.0.0.1', 'localhost"]
 
 
 # Application definition

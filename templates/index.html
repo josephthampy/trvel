@@ -85,6 +85,79 @@
             font-size: 0.9rem;
         }
     }
+
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #fff;
+    }
+    
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 32px;
+      color: #333;
+    }
+    
+    .destinations-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+    }
+    
+    .destination-card {
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .destination-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .destination-info {
+      padding: 15px;
+    }
+    
+    .destination-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    .destination-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+    
+    @media (max-width: 900px) {
+      .destinations-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .destinations-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
     </style>    
     
 </head>
@@ -320,43 +393,90 @@
 
 	<!-- Destinations -->
 
-	<div class="destinations" id="destinations">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<div class="section_subtitle">simply amazing places</div>
-					<div class="section_title"><h2>Popular Destinations</h2></div>
-				</div>
-			</div>
-			<div class="row destinations_row">
-				<div class="col">
-					<div class="destinations_container item_grid">
-
-						<!-- Destination -->
-						
-						{% for dest in dests %}
-						<div class="destination item">
-							<div class="destination_image">
-								<img src="{{ dest.img.url }}" alt="" style="width: 300px; height: 200px; object-fit: cover;">
-
-								{% if dest.offer %}
-								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
-								{% endif %}
-							</div>
-							<div class="destination_content">
-								<div class="destination_title"><a href="accounts/destinations">{{dest.name}}</a></div>
-								<div class="destination_subtitle"><p>{{dest.desc}}</p></div>
-						<!--		<div class="destination_price">From ${{dest.price}}</div> -->
-							</div>
-						</div>
-
-						{% endfor %}
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <h1>Popular Destinations</h1>
+  
+    <div class="destinations-container">
+      <!-- Kerala -->
+      <div class="destination-card">
+        <img src="{% static 'images/kerala.jpg' %}" alt="Kerala" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Kerala</h2>
+          <p class="destination-description">Serene backwaters, lush hills, pristine beaches, culture and wildlife.</p>
+        </div>
+      </div>
+      
+      <!-- Malaysia -->
+      <div class="destination-card">
+        <img src="{% static 'images/malaysia.jpg' %}" alt="Malaysia" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Malaysia</h2>
+          <p class="destination-description">Stunning islands, diverse culture, modern cities, rainforests, and cuisine.</p>
+        </div>
+      </div>
+      
+      <!-- Thailand -->
+      <div class="destination-card">
+        <img src="{% static 'images/thailand.jpg' %}" alt="Thailand" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Thailand</h2>
+          <p class="destination-description">Tropical beaches, vibrant nightlife, rich culture, temples and cuisine.</p>
+        </div>
+      </div>
+      
+      <!-- Bali -->
+      <div class="destination-card">
+        <img src="{% static 'images/bali.jpg' %}" alt="Bali" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Bali</h2>
+          <p class="destination-description">Pristine beaches, lush rice terraces, temples, culture, and adventure.</p>
+        </div>
+      </div>
+      
+      <!-- Singapore -->
+      <div class="destination-card">
+        <img src="{% static 'images/singapore.jpg' %}" alt="Singapore" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Singapore</h2>
+          <p class="destination-description">Futuristic skyline, vibrant culture, lush gardens, shopping and cuisine.</p>
+        </div>
+      </div>
+      
+      <!-- Varanasi -->
+      <div class="destination-card">
+        <img src="{% static 'images/varanasi.jpg' %}" alt="Varanasi" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Varanasi</h2>
+          <p class="destination-description">Sacred Ganges, ancient temples, spiritual aura, ghats, and heritage.</p>
+        </div>
+      </div>
+      
+      <!-- Punjab -->
+      <div class="destination-card">
+        <img src="{% static 'images/punjab.jpg' %}" alt="Punjab" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Punjab</h2>
+          <p class="destination-description">Golden Temple, lively festivals, rich culture, cuisine, and heritage.</p>
+        </div>
+      </div>
+      
+      <!-- Rajasthan -->
+      <div class="destination-card">
+        <img src="{% static 'images/rajasthan.jpg' %}" alt="Rajasthan" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Rajasthan</h2>
+          <p class="destination-description">Royal palaces, golden deserts, vibrant culture, forts, and heritage.</p>
+        </div>
+      </div>
+      
+      <!-- Delhi -->
+      <div class="destination-card">
+        <img src="{% static 'images/Delhi.jpg' %}" alt="Delhi" class="destination-image">
+        <div class="destination-info">
+          <h2 class="destination-name">Delhi</h2>
+          <p class="destination-description">Historic landmarks, vibrant markets, rich culture, cuisine and heritage.</p>
+        </div>
+      </div>
+    </div>
 
 
 <!--services start-->
